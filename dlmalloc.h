@@ -607,7 +607,7 @@ MAX_RELEASE_CHECK_RATE   default: 4095 unless not HAVE_MMAP
        defined(__i386__) || defined(__x86_64__))) ||                    \
      (defined(_MSC_VER) && _MSC_VER>=1310))
 #ifndef USE_SPIN_LOCKS
-#define USE_SPIN_LOCKS 1
+#define USE_SPIN_LOCKS 0
 #endif /* USE_SPIN_LOCKS */
 #elif USE_SPIN_LOCKS
 #error "USE_SPIN_LOCKS defined without implementation"
